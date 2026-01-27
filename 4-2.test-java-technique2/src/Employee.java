@@ -4,6 +4,8 @@ public class Employee {
 
     public Employee(String string, int i) {
         //TODO Auto-generated constructor stub
+        setName(string);        /* 忘れずに！ */
+        setAge(i);              /* 忘れずに！ */
     }
 
     public String getName() {
