@@ -2,8 +2,14 @@ public class Employee {
     String name;
     int age;
 
-    public Employee(String string, int i) {
+   // public Employee(String string, int i) {
         //TODO Auto-generated constructor stub
+        
+   // }
+
+    public Employee(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
 
     public String getName() {

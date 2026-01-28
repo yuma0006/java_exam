@@ -14,7 +14,7 @@ public class Exam3 {
         list.add(new Employee("田中",19));
 
         for(Employee name : list){
-            System.out.println(name.getName());
+            System.out.println(name.getName() + "(" +  name.getAge() + ")");
         }
 
         
