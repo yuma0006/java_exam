@@ -27,6 +27,7 @@ public class Exam1 {
 			sql = "INSERT INTO test_members(name,age,dep_id) VALUES ('山田太郎',62,1);";
 			sql = "INSERT INTO test_members(name,age,dep_id) VALUES ('佐藤花子',33,2);";
 			sql = "INSERT INTO test_members(name,age,dep_id) VALUES ('遠藤次郎',55,2);";
+			
 
 			// (3)SQL実行準備
 			pstmt = con.prepareStatement(sql);

@@ -16,10 +16,11 @@ public class Exam2 {
         // 接続情報
         String url = "jdbc:postgresql://localhost:5432/student";
         String user = "postgres";
-        String password = "postgres";
+        String password = "Yuma1103628";
 
         Connection con = null; // 使用する変数の宣言
         PreparedStatement pstmt = null;
+        ResultSet rs = null;
         String sql = null;
 
         try {
@@ -27,13 +28,13 @@ public class Exam2 {
             con = DriverManager.getConnection(url, user, password);
 
             // (2)SQL文を作成
-            sql = "SELECT id,name,age,dep_id FROM id=2 ,id=3;";
+            sql = "SELECT id,name,age,dep_id FROM test_members WHERE dep_id=2;";
 
             // (3)SQL実行準備
             pstmt = con.prepareStatement(sql);
 
             // (4)SQL実行
-            ResultSet rs = pstmt.executeQuery();
+            rs = pstmt.executeQuery();
 
             // (5)結果の操作
             while (rs.next()) {

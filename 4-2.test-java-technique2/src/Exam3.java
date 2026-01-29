@@ -14,11 +14,7 @@ public class Exam3 {
         list.add(new Employee("田中",19));
 
         for(Employee name : list){
-<<<<<<< HEAD
-            System.out.println(name.getName() + "(" +  name.getAge() + ")");
-=======
             System.out.println(name.getName() + "(" + name.getAge() + ")"); /* 年齢入ってないよ♡ */
->>>>>>> 9ce6c0ade5db26002b756fc29222c77132c97869
         }
 
         
