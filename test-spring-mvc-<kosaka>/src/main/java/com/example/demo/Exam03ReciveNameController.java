@@ -14,7 +14,8 @@ public class Exam03ReciveNameController {
     }
 
     @RequestMapping("/fin")
-    public String fin(){
+    public String fin(String name){
+        System.out.println(name);
         return "finished";
     }
 }

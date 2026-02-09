@@ -12,8 +12,7 @@ public class Exam04ReceiveNameController {
 
     @ModelAttribute
     public ReceiveNameForm setUpForm(){
-        Exam04ReceiveNameController name = new Exam04ReceiveNameController();
-        return null;
+        return new ReceiveNameForm();
     }
 
     @RequestMapping("/")
@@ -22,7 +21,8 @@ public class Exam04ReceiveNameController {
     }
 
     @RequestMapping("/fin")
-    public String fin(){
+    public String fin(ReceiveNameForm receiveNameForm){
+        System.out.println(receiveNameForm.getName());
         return "finished";
     }
 }
