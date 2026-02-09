@@ -1,0 +1,21 @@
+
+.a{
+    color: white;
+    background-color: brown;
+    margin-bottom: 5px;
+}
+
+.b{
+    color: white;
+    background-color: green;
+    margin-bottom: 5px;
+}
+
+.main{
+    width: 170px;
+
+}
+
+li{
+    list-style-type: none;
+}
