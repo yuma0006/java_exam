@@ -1,0 +1,30 @@
+
+-- ■問1
+INSERT INTO items VALUES (13,1,'鰯',150),(14,2,'羊',650);
+
+-- ■問2
+UPDATE items SET price = price * 0.9;
+
+-- ■問3
+DELETE FROM employees WHERE end_date <='2013-03-31';
+
+-- ■問4
+SELECT min(start_date) FROM employees;
+
+-- ■問5
+SELECT r.name,p.name FROM regions AS r RIGHT OUTER JOIN prefectures AS p ON r.code = p.region_code;
+
+-- ■問6
+SELECT sum(population) FROM populations;
+
+-- ■問7
+SELECT p.name,po.population,po.gender_code FROM prefectures AS p LEFT OUTER JOIN populations AS po ON p.code = po.prefecture_code WHERE p.code>'39' ORDER BY p.code;
+
+-- ■問8
+SELECT r.name,g.label,p.popilation FROM regions AS r LEFT OUTER JOIN generations AS g ON r.code=pr.region_code;
+
+
+
+
+
+
